@@ -1524,6 +1524,8 @@ Ingenieurbüro ing-rb, &lt;i&gt;mail@ing-rb.de&lt;/i&gt;&lt;/p&gt;&lt;/author&gt
 <part name="C2" library="Capacitor" library_urn="urn:adsk.eagle:library:16290819" deviceset="C" device="CHIP-1206(3216-METRIC)" package3d_urn="urn:adsk.eagle:package:16290893/2" technology="_" value="1uF"/>
 <part name="C1" library="Capacitor" library_urn="urn:adsk.eagle:library:16290819" deviceset="C" device="CHIP-1206(3216-METRIC)" package3d_urn="urn:adsk.eagle:package:16290893/2" technology="_" value="1uF"/>
 <part name="LEDS" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X5" device="/90" package3d_urn="urn:adsk.eagle:package:22467/2"/>
+<part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1618,6 +1620,12 @@ Ingenieurbüro ing-rb, &lt;i&gt;mail@ing-rb.de&lt;/i&gt;&lt;/p&gt;&lt;/author&gt
 <attribute name="NAME" x="-11.43" y="107.315" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-11.43" y="88.9" size="1.778" layer="96"/>
 </instance>
+<instance part="+3V4" gate="G$1" x="114.3" y="73.66" smashed="yes" rot="R270">
+<attribute name="VALUE" x="109.22" y="76.2" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V5" gate="G$1" x="114.3" y="86.36" smashed="yes" rot="R270">
+<attribute name="VALUE" x="109.22" y="88.9" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1676,16 +1684,12 @@ Ingenieurbüro ing-rb, &lt;i&gt;mail@ing-rb.de&lt;/i&gt;&lt;/p&gt;&lt;/author&gt
 <junction x="88.9" y="68.58"/>
 <pinref part="U2" gate="G$1" pin="RES@2"/>
 <wire x1="88.9" y1="78.74" x2="88.9" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="76.2" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="73.66" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="76.2" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
 <junction x="88.9" y="78.74"/>
 <pinref part="U2" gate="G$1" pin="RES@3"/>
 <wire x1="83.82" y1="76.2" x2="88.9" y2="76.2" width="0.1524" layer="91"/>
 <junction x="88.9" y="76.2"/>
-<pinref part="U2" gate="G$1" pin="RES@4"/>
-<wire x1="83.82" y1="73.66" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
-<junction x="88.9" y="73.66"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -1749,19 +1753,27 @@ Ingenieurbüro ing-rb, &lt;i&gt;mail@ing-rb.de&lt;/i&gt;&lt;/p&gt;&lt;/author&gt
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="RES@4"/>
+<wire x1="83.82" y1="73.66" x2="111.76" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VDD_IO"/>
+<wire x1="83.82" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="93.98" x2="91.44" y2="86.36" width="0.1524" layer="91"/>
+<junction x="91.44" y="93.98"/>
+<wire x1="91.44" y1="86.36" x2="111.76" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="CAP"/>
 <wire x1="33.02" y1="83.82" x2="43.18" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="VDD_IO"/>
-<wire x1="83.82" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SDA" class="0">
