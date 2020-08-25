@@ -2376,6 +2376,144 @@ BATTERY</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="MCP112T-270E_TT">
+<packages>
+<package name="SOT95P237X112-3N">
+<text x="-2.54396875" y="2.54396875" size="1.017590625" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-2.5431" y="-3.81465" size="1.017240625" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<wire x1="-0.65" y1="1.46" x2="0.65" y2="1.46" width="0.127" layer="51"/>
+<wire x1="0.65" y1="1.46" x2="0.65" y2="-1.46" width="0.127" layer="51"/>
+<wire x1="0.65" y1="-1.46" x2="-0.65" y2="-1.46" width="0.127" layer="51"/>
+<wire x1="-0.65" y1="-1.46" x2="-0.65" y2="1.46" width="0.127" layer="51"/>
+<wire x1="-0.65" y1="1.5585" x2="0.65" y2="1.5585" width="0.127" layer="21"/>
+<wire x1="0.65" y1="1.5585" x2="0.65" y2="0.65" width="0.127" layer="21"/>
+<wire x1="0.65" y1="-0.65" x2="0.65" y2="-1.5585" width="0.127" layer="21"/>
+<wire x1="0.65" y1="-1.5585" x2="-0.65" y2="-1.5585" width="0.127" layer="21"/>
+<circle x="-2.5" y="1.05" radius="0.1" width="0.2" layer="21"/>
+<wire x1="-1.98" y1="1.71" x2="-1.98" y2="-1.71" width="0.05" layer="39"/>
+<wire x1="-1.98" y1="-1.71" x2="1.98" y2="-1.71" width="0.05" layer="39"/>
+<wire x1="1.98" y1="-1.71" x2="1.98" y2="1.71" width="0.05" layer="39"/>
+<wire x1="1.98" y1="1.71" x2="-1.98" y2="1.71" width="0.05" layer="39"/>
+<circle x="-2.5" y="1.05" radius="0.1" width="0.2" layer="51"/>
+<smd name="1" x="-1.055" y="0.95" dx="1.24" dy="0.59" layer="1" roundness="50"/>
+<smd name="2" x="-1.055" y="-0.95" dx="1.24" dy="0.59" layer="1" roundness="50"/>
+<smd name="3" x="1.0553" y="0" dx="1.24" dy="0.59" layer="1" roundness="50"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MCP112T-270E/TT">
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.41" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.41" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.41" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.41" layer="94"/>
+<text x="-12.7" y="11.16" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-12.7" y="-14.16" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="VDD" x="17.78" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="VOUT" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="VSS" x="17.78" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MCP112T-270E/TT" prefix="U">
+<description>None &lt;a href="https://snapeda.com/parts/MCP112T-270E/TT/Microchip/view-part/?ref=eda"&gt;Buy Part&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCP112T-270E/TT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P237X112-3N">
+<connects>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ARROW_ELECTRONICS-PURCHASE-URL" value="https://snapeda.com/shop?store=Arrow+Electronics&amp;id=142363"/>
+<attribute name="AVAILABILITY" value="Good"/>
+<attribute name="DESCRIPTION" value=" Supervisor Push-Pull, Totem Pole 1 Channel SOT-23-3 "/>
+<attribute name="MF" value="Microchip"/>
+<attribute name="MOUSER-PURCHASE-URL" value="https://snapeda.com/shop?store=Mouser&amp;id=142363"/>
+<attribute name="MP" value="MCP112T-270E/TT"/>
+<attribute name="PACKAGE" value="SOT-23 Microchip"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="MIC2004-1.2YM5-TR">
+<packages>
+<package name="SOT95P280X145-5N">
+<circle x="-2.41" y="1.05" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.41" y="1.05" radius="0.1" width="0.2" layer="51"/>
+<text x="-2.6" y="2" size="1.016" layer="25">&gt;NAME</text>
+<text x="-2.6" y="-2" size="1.016" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-0.33" y1="1.45" x2="0.33" y2="1.45" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.335" x2="0.8" y2="-0.335" width="0.127" layer="21"/>
+<wire x1="0.33" y1="-1.45" x2="-0.33" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-1.45" x2="-0.8" y2="1.45" width="0.127" layer="51"/>
+<wire x1="0.8" y1="1.45" x2="0.8" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="1.45" x2="0.8" y2="1.45" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-1.45" x2="-0.8" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-2.11" y1="1.7" x2="2.11" y2="1.7" width="0.05" layer="39"/>
+<wire x1="2.11" y1="1.7" x2="2.11" y2="-1.7" width="0.05" layer="39"/>
+<wire x1="2.11" y1="-1.7" x2="-2.11" y2="-1.7" width="0.05" layer="39"/>
+<wire x1="-2.11" y1="-1.7" x2="-2.11" y2="1.7" width="0.05" layer="39"/>
+<smd name="1" x="-1.165" y="0.95" dx="1.39" dy="0.58" layer="1" roundness="25"/>
+<smd name="2" x="-1.165" y="0" dx="1.39" dy="0.58" layer="1" roundness="25"/>
+<smd name="3" x="-1.165" y="-0.95" dx="1.39" dy="0.58" layer="1" roundness="25"/>
+<smd name="4" x="1.165" y="-0.95" dx="1.39" dy="0.58" layer="1" roundness="25"/>
+<smd name="5" x="1.165" y="0.95" dx="1.39" dy="0.58" layer="1" roundness="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MIC2004-1.2YM5-TR">
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.41" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.41" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.41" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.41" layer="94"/>
+<text x="-12.7" y="11.16" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-12.7" y="-14.16" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="VIN" x="-17.78" y="7.62" length="middle" direction="in"/>
+<pin name="ENABLE" x="-17.78" y="2.54" length="middle"/>
+<pin name="NC" x="-17.78" y="-2.54" length="middle"/>
+<pin name="VOUT" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="GND" x="17.78" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MIC2004-1.2YM5-TR" prefix="U">
+<description>None &lt;a href="https://snapeda.com/parts/MIC2004-1.2YM5-TR/Microchip/view-part/?ref=eda"&gt;Buy Part&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MIC2004-1.2YM5-TR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P280X145-5N">
+<connects>
+<connect gate="G$1" pin="ENABLE" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="NC" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Warning"/>
+<attribute name="DESCRIPTION" value=" Power Switch/Driver 1:1 P-Channel 1.2A SOT-23-5 "/>
+<attribute name="MF" value="Microchip"/>
+<attribute name="MOUSER-PURCHASE-URL" value="https://snapeda.com/shop?store=Mouser&amp;id=1216368"/>
+<attribute name="MP" value="MIC2004-1.2YM5-TR"/>
+<attribute name="PACKAGE" value="SOT-23 Microchip"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2387,7 +2525,6 @@ BATTERY</description>
 </classes>
 <parts>
 <part name="U1" library="MCP73831T-2DCI_OT" deviceset="MCP73831T-2DCI/OT" device=""/>
-<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="2.0KOHM" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="2.0k"/>
 <part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="470OHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="470"/>
 <part name="C1" library="Capacitor" library_urn="urn:adsk.eagle:library:16290819" deviceset="C" device="CHIP-1206(3216-METRIC)" package3d_urn="urn:adsk.eagle:package:16290893/2" technology="_" value="4,7uF"/>
@@ -2402,6 +2539,11 @@ BATTERY</description>
 <part name="BT1" library="SparkFun-Batteries" library_urn="urn:adsk.eagle:library:508" deviceset="BATTERY" device="-20MM_SMD" package3d_urn="urn:adsk.eagle:package:37215/1"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J2" library="10118192-0001LF" deviceset="10118192-0001LF" device=""/>
+<part name="U2" library="MCP112T-270E_TT" deviceset="MCP112T-270E/TT" device=""/>
+<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U3" library="MIC2004-1.2YM5-TR" deviceset="MIC2004-1.2YM5-TR" device=""/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -2411,10 +2553,6 @@ BATTERY</description>
 <instance part="U1" gate="A" x="106.68" y="60.96" smashed="yes">
 <attribute name="NAME" x="101.64438125" y="69.68333125" size="2.085459375" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="100.832059375" y="45.4502" size="2.08491875" layer="96" ratio="10" rot="SR0"/>
-</instance>
-<instance part="JP1" gate="G$1" x="137.16" y="15.24" smashed="yes">
-<attribute name="NAME" x="130.81" y="20.955" size="1.778" layer="95"/>
-<attribute name="VALUE" x="130.81" y="10.16" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="73.66" y="55.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="72.136" y="55.88" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -2451,8 +2589,8 @@ BATTERY</description>
 <instance part="GND3" gate="1" x="121.92" y="86.36" smashed="yes" rot="R180">
 <attribute name="VALUE" x="124.46" y="88.9" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND4" gate="1" x="127" y="7.62" smashed="yes">
-<attribute name="VALUE" x="124.46" y="5.08" size="1.778" layer="96"/>
+<instance part="GND4" gate="1" x="139.7" y="5.08" smashed="yes">
+<attribute name="VALUE" x="137.16" y="2.54" size="1.778" layer="96"/>
 </instance>
 <instance part="BT1" gate="G$1" x="182.88" y="60.96" smashed="yes">
 <attribute name="NAME" x="182.88" y="65.278" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -2464,6 +2602,24 @@ BATTERY</description>
 <instance part="J2" gate="G$1" x="48.26" y="12.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="53.34618125" y="2.019" size="1.780159375" layer="95" rot="R180"/>
 <attribute name="VALUE" x="53.348209375" y="25.4205" size="1.78086875" layer="96" rot="R180"/>
+</instance>
+<instance part="U2" gate="G$1" x="53.34" y="124.46" smashed="yes">
+<attribute name="NAME" x="40.64" y="135.62" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="40.64" y="110.3" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="GND6" gate="1" x="81.28" y="119.38" smashed="yes" rot="R90">
+<attribute name="VALUE" x="83.82" y="116.84" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U3" gate="G$1" x="152.4" y="124.46" smashed="yes">
+<attribute name="NAME" x="139.7" y="135.62" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="139.7" y="110.3" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="GND7" gate="1" x="180.34" y="116.84" smashed="yes" rot="R90">
+<attribute name="VALUE" x="182.88" y="114.3" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="JP1" gate="G$1" x="152.4" y="12.7" smashed="yes">
+<attribute name="NAME" x="146.05" y="18.415" size="1.778" layer="95"/>
+<attribute name="VALUE" x="146.05" y="7.62" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -2508,12 +2664,6 @@ BATTERY</description>
 <wire x1="121.92" y1="78.74" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="15.24" x2="127" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="127" y1="15.24" x2="127" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="BT1" gate="G$1" pin="-"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
@@ -2521,6 +2671,22 @@ BATTERY</description>
 <pinref part="J2" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="55.88" y1="15.24" x2="73.66" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="149.86" y1="12.7" x2="139.7" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="12.7" x2="139.7" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VSS"/>
+<wire x1="71.12" y1="119.38" x2="78.74" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="GND"/>
+<wire x1="170.18" y1="116.84" x2="177.8" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2558,14 +2724,43 @@ BATTERY</description>
 <junction x="121.92" y="66.04"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="17.78" x2="124.46" y2="17.78" width="0.1524" layer="91"/>
-<label x="124.46" y="17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="BT1" gate="G$1" pin="+"/>
 <wire x1="177.8" y1="60.96" x2="170.18" y2="60.96" width="0.1524" layer="91"/>
 <label x="170.18" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VDD"/>
+<wire x1="71.12" y1="132.08" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
+<label x="78.74" y="132.08" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="VIN"/>
+<wire x1="134.62" y1="132.08" x2="124.46" y2="132.08" width="0.1524" layer="91"/>
+<label x="124.46" y="132.08" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ENABLE" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="ENABLE"/>
+<wire x1="134.62" y1="127" x2="124.46" y2="127" width="0.1524" layer="91"/>
+<label x="124.46" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VOUT"/>
+<wire x1="71.12" y1="127" x2="78.74" y2="127" width="0.1524" layer="91"/>
+<label x="78.74" y="127" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="VOUT" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="VOUT"/>
+<wire x1="170.18" y1="132.08" x2="177.8" y2="132.08" width="0.1524" layer="91"/>
+<label x="177.8" y="132.08" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="149.86" y1="15.24" x2="139.7" y2="15.24" width="0.1524" layer="91"/>
+<label x="139.7" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
